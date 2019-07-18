@@ -1,0 +1,179 @@
+#curve
+  position: absolute
+  top: -5rem
+  width: 100%
+  @media screen and (min-width: 1088px)
+    top: -8rem
+
+  // path
+  //   fill: red
+footer
+  font-family: 'd-din_condenseddinCnBd'
+  font-size: 1.25rem
+  color: white
+  padding: 0rem
+  position: relative
+  @media screen and (min-width: 1088px)
+    padding: 6rem 0 0rem
+  @media screen and (min-width: 1472px)
+    padding-top: 12rem
+  .bgfooteer
+    background: #0071BD
+    padding-bottom: 1.5rem
+  .boxRow
+    @include prefix(display,flex)
+    @include prefix(flex-direction, column)
+    @include prefix(flex-wrap, wrap)
+    @include prefix(justify-content, center)
+    @include prefix(align-items, center)
+    @media screen and (min-width: 1088px)
+      @include prefix(flex-direction, row)
+      @include prefix(justify-content, space-between)
+      @include prefix(align-items, flex-start)
+    > .boxCol
+      &:first-child
+        @media screen and (min-width: 1088px)
+          width: 40%
+
+      &:last-child
+        @media screen and (min-width: 1088px)
+          width: 50%
+    h3
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 1.5rem
+      line-height: 1em
+      text-align: center
+      img
+        display: inline-block
+        vertical-align: top
+        width: 100px
+        margin-top: -3px
+    p,
+    a
+      font-family: 'd-din_condensedregular'
+      font-size: 1rem
+      line-height: 1.5em
+      &.center
+        text-align: center
+        // letter-spacing: -.05em
+        // word-spacing: -0.1em
+    a
+      text-decoration: none
+      transition: .5s all ease
+      color: white
+      &:hover
+        text-decoration: underline
+    .boxSitios
+      @include prefix(display,flex)
+      @include prefix(flex-direction, column)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, center)
+      @include prefix(align-items, center)
+      padding-top: .75rem
+      padding-bottom: 1.75rem
+      @media screen and (min-width: 1088px)
+        padding-top: 1.75rem
+        padding-bottom: 0rem
+        @include prefix(flex-direction, row)
+        @include prefix(justify-content, space-between)
+        @include prefix(align-items, flex-start)
+      ul
+        li
+          text-align: center
+          @media screen and (min-width: 1088px)
+            text-align: left
+    form
+      padding-top: .65rem
+      padding-left: .85rem
+      padding-right: .85rem
+      @media screen and (min-width: 1088px)
+        padding-left: 0rem
+        padding-right: 0rem
+      .rowForm
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, stretch)
+        &.center
+          @include prefix(justify-content, center)
+
+        .colForm
+          position: relative
+          .fa-envelope
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: .5rem
+          label
+            font-family: 'd-din_condensedregular'
+            font-size: .85rem
+            color: white
+            &:hover
+              color: white
+            a
+              font-family: 'd-din_condensedregular'
+              font-size: .85rem
+              margin-left: 6px
+              color: white
+              &:hover
+                text-decoration: underline
+          p
+            font-size: .65rem
+            text-align: justify
+            padding-top: 10px
+            &.error,
+            &.success
+              line-height: 1.85rem
+              font-size: .85rem
+              padding-top: 0
+              color: red
+              text-align: center
+              display: none
+              @media screen and (min-width: 1088px)
+                font-size: .95rem
+            &.success
+              color: rgb(17, 144, 98)
+              display: none
+          .btnSuscription
+            width: 139px
+            height: 100%
+            display: block
+            box-sizing: border-box
+            text-align: center
+            line-height: 2.685em
+            background: white
+            font-size: 1rem
+            color: #3273dc !important
+            @media screen and (min-width: 1088px)
+              width: 153px
+              font-size: 1.25rem
+              line-height: 2.1em
+            &:hover
+              text-decoration: none
+
+
+          input[type="text"]
+            background: transparent
+            width: 183px
+            border: 1px solid white
+            padding: 0rem .5rem 0rem 2.25rem
+            color: white
+            font-size: .85rem
+            line-height: 3em
+            word-spacing: -.05rem
+            font-family: 'd-din_condensedregular'
+            outline: none
+            @media screen and (min-width: 1088px)
+              width: 250px
+            &:hover,
+            &:active,
+              outline: none
+              background: transparent
+            &::-webkit-autofill,
+            &::-webkit-autofill:hover,
+            &::-webkit-autofill:focus,
+              background: red
+            &::placeholder
+              color: white
+              background: transparent

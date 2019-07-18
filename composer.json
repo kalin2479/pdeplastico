@@ -1,0 +1,17 @@
+{
+  "name": "html-to-img/html-to-img",
+  "description": "convertir un html a img",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Carlos Espinoza",
+      "email": "carlos.espinoza@digitas.com",
+      "role": "developers"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "intervention/image": "^2.4",
+    "phpoffice/phpspreadsheet": "^1.7"
+  }
+}

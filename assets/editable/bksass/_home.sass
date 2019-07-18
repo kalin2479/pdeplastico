@@ -1,0 +1,364 @@
+.rowFlex
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, nowrap)
+  @include prefix(justify-content, center)
+  @include prefix(align-items, flex-start)
+  .colFlex
+    &:first-child
+      margin-right: 2rem
+.boxLoading,
+.boxLoading2
+  position: absolute
+  top: 0%
+  left: 50%
+  transform: translate(-50%,20%)
+  display: none
+  p
+    font-family: 'd-din_condenseddinCnBd'
+    font-size: 1.25rem
+    line-height: 1em
+    text-align: center
+    color: rgba(0,140,232,1)
+.boxLoading2
+  width: 100%
+section
+  padding-bottom: 50px
+  position: relative
+  z-index: 90
+  &.bgWhite
+    background: white
+  .minheight2
+    min-height: 226px
+    position: relative
+  .heightMin
+    min-height: 719px
+    position: relative
+  .btnDescarga
+    display: none
+    position: relative
+    top: 100px
+    .etiqueta
+      height: 115px
+      width: 380px
+      &.small
+        height: 71px
+        &:before
+          border-top: 36px solid transparent
+          border-bottom: 37px solid transparent
+          right: -.9rem
+        &:after
+          border-top: 36px solid transparent
+          border-bottom: 37px solid transparent
+          left: -.9rem
+      &:before
+        border-top: 58px solid transparent
+        border-bottom: 58px solid transparent
+        right: -.9rem
+      &:after
+        border-top: 58px solid transparent
+        border-bottom: 58px solid transparent
+        left: -.9rem
+    p
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 2.65rem
+      line-height: 1em
+      color: rgba(255,255,255,1)
+      width: 100%
+      text-align: center
+      &.centrar
+        padding-top: 13px
+  .marcoAzul
+    width: 556px
+    height: 695px
+    border: 3px solid #008CE8
+    border-radius: 2px
+    padding: 4px
+    position: relative
+  .boxZoom
+    width: 321px
+    height: 50px
+    border: 1px solid rgba(0,140,232,.75)
+    @media screen and (min-width: 1472px)
+      width: 396px
+  .cr-slider-wrap
+    position: absolute
+    top: 7.65rem
+    right: -23.25rem
+    width: 350px !important
+    @media screen and (min-width: 1088px)
+      right: -23.25rem
+    @media screen and (min-width: 1472px)
+      right: -25.25rem
+  .stepOne
+    position: relative
+  .stepTwo
+    display: none
+  .boxPostFacebook
+    margin-top: 12.5rem
+    h3
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 2rem
+      line-height: 1.15em
+      color: rgba(0,140,232,1)
+    .listPost
+      margin-top: 1rem
+      li
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, center)
+        margin-bottom: 1rem
+        img
+          width: 25px
+          margin-right: .7rem
+          &.woman
+            width: 35px
+            margin-left: -5px
+            margin-right: .35rem
+        .boxPost
+          border: 2px solid rgba(0,140,232,0.75)
+          border-radius: 30px
+          padding: 8px 10px 8px 15px
+          position: relative
+          @media screen and (min-width: 1088px)
+            width: 420px
+          @media screen and (min-width: 1472px)
+            width: 451px
+          &:before
+            content: ''
+            background: url('../images/facebook.svg') center no-repeat
+            height: 18px
+            width: 18px
+            position: absolute
+            bottom: -10px
+            left: 5px
+          p
+            color: #666666
+            font-family: 'd-din_condensedregular'
+            font-size: 1.12rem
+            line-height: 1.15em
+            @media screen and (min-width: 1088px)
+              font-size: 1.05rem
+            @media screen and (min-width: 1472px)
+              font-size: 1.12rem
+            span
+              &.bold
+                font-family: 'd-din_condenseddinCnBd'
+              &.azul
+                color: rgba(0,140,232,1)
+  .boxForm
+    .ulForm
+      padding-top: .45rem
+      li
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, center)
+        margin-bottom: 1rem
+        // .input-container
+          // margin: 3em auto
+          // max-width: 300px
+        .boxOption
+          @include prefix(display,flex)
+          @include prefix(flex-direction, row)
+          @include prefix(flex-wrap, nowrap)
+          @include prefix(justify-content, flex-start)
+          @include prefix(align-items, center)
+          a
+            background: rgba(0,140,232,1)
+            height: 61px
+            margin-left: .35rem
+            padding: 0 10px
+            border: 3px solid rgba(0,140,232,1)
+            span
+              color: white
+              font-size: 1.85rem
+              line-height: 3.5rem
+              font-family: 'd-din_condenseddinCnBd'
+            &.con
+              background: white
+              margin-left: .65rem
+              span
+                color: rgba(0,140,232,1)
+                position: relative
+                &:before
+                  content: ''
+                  position: absolute
+                  top: 55%
+                  right: -5px
+                  transform: translateY(-50%)
+                  border: 2px solid red
+                  width: 135px
+        input[type='text']
+          font-size: 3rem
+          font-family: 'd-din_condenseddinCnBd'
+          padding: 2px 14px
+          box-sizing: border-box
+          color: rgba(0,140,232,0.95)
+          border: 3px solid rgba(0,140,232,1)
+          margin-left: .35rem
+          outline: none
+          &:focus,
+          &:active
+            outline: none
+          &::placeholder
+            color: rgba(0,140,232,0.75)
+        input[type='file']
+          display: none
+        .file-info
+          font-size: 0.65em
+          margin-left: 1.5rem
+        .browse-btn
+          // min-height: 35px
+          background: transparent
+          border: 0
+          margin: 0
+          padding: 0
+        .etiqueta
+          margin: 0 0 0 .35rem
+          padding: 1px 18px 0
+          &.btnzoom
+
+          &.btnLink
+            padding-top: 12px
+            padding-bottom: 12px
+            &:hover
+              span
+                color: white
+            &:before
+              border-left: 30px solid #008CE8
+              border-top: 34px solid transparent
+              border-bottom: 30px solid transparent
+              right: -1.85rem
+            span
+              font-size: 2.1rem
+          span
+            font-size: 1.65rem
+            @media screen and (min-width: 1200px)
+              line-height: 2.5rem
+              font-size: 2rem
+
+          &:after
+            display: none
+          &:before
+            border-left: 15px solid #008CE8
+            border-top: 20px solid transparent
+            border-bottom: 20px solid transparent
+        p
+          background: #008CE8
+          font-size: 1.35rem
+          color: white
+          padding: 1px 0
+          width: 35px
+          text-align: center
+          line-height: 2.45rem
+          font-family: 'd-din_condenseddinCnBd'
+  .marcoAzul
+    border: 3px solid #008CE8
+    border-radius: 2px
+    padding: 4px
+  .PreviewImage
+    width: 541px
+    height: 678px
+
+    position: relative
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    .titleImage
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 8rem
+      line-height: 6.75rem
+      color: #fff
+      -webkit-text-stroke: 2px black
+      text-shadow: -4px 0 black, 0 3px black, 3px 0 black, 0 -4px black
+      position: absolute
+      top: 1rem
+      left: 50%
+      transform: translateX(-50%)
+      text-transform: uppercase
+      text-align: center
+      // width: 100%
+      width: 520px
+      // text-overflow: ellipsis
+      overflow: hidden
+    .wrapperText
+      bottom: -1.25rem
+      left: 50%
+      transform: translateX(-50%)
+      position: absolute
+      width: 100%
+      text-align: center
+      p
+        color: #fff
+        -webkit-text-stroke: 2px black
+        text-shadow: -4px 0 black, 0 3px black, 3px 0 black, 0 -4px black
+        font-family: 'd-din_condenseddinCnBd'
+        font-size: 4.5rem
+        position: relative
+        &.no
+          &:before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 4rem
+            width: 320px
+            height: 6px
+            background: #f00
+  .boxtitle
+    color: #008CE8
+    text-align: center
+    padding-top: 4rem
+    margin-bottom: 3rem
+    h2,
+    h3
+      line-height: .9em
+
+    h2
+      font-family: 'd-din_condensedregular'
+      font-size: 2rem
+      @media screen and (min-width: 1200px)
+        font-size: 2.75rem
+
+    h3
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 3rem
+      @media screen and (min-width: 1200px)
+        font-size: 4rem
+.etiqueta
+  color: #fff
+  background: #008CE8
+  display: inline-block
+  padding: 3px 18px 0px
+  margin-top: 0.4rem
+  position: relative
+  &:after,
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    border-left: 15px solid #008CE8
+    border-top: 22px solid transparent
+    border-bottom: 22px solid transparent
+    position: absolute
+    top: 0
+    right: -.85rem
+    @media screen and (min-width: 1200px)
+      border-top: 26px solid transparent
+      border-bottom: 26px solid transparent
+  &:after
+    transform: rotate(-180deg)
+    left: -.8rem
+    right: auto
+  span
+    font-family: 'd-din_condenseddinCnBd'
+    font-size: 2rem
+    line-height: 2.5rem
+    @media screen and (min-width: 1200px)
+      font-size: 2.75rem
+      line-height: 3rem

@@ -1,0 +1,549 @@
+html
+  &.popup
+    overflow: hidden
+.contentPopup
+  position: absolute
+  background: white
+  border-radius: 15px
+  padding: 1.5rem 1.75rem
+  top: -14rem
+  left: -.15rem
+  z-index: 8889
+  width: 320px
+  display: none
+  @media screen and (min-width: 1088px)
+    top: 4rem
+    left: -20rem
+  &.opPos2
+    top: -12.5rem
+    left: -7.15rem
+    @media screen and (min-width: 1088px)
+      top: 4rem
+      left: -20rem
+    .indicador
+      transform: rotate(67deg)
+      bottom: 31px
+      left: 65px
+      right: auto
+      @media screen and (min-width: 1088px)
+        top: -7px
+        transform: rotate(0deg)
+        left: auto
+        bottom: auto
+        right: -7px
+  &.opPos3
+    top: -15.5rem
+    left: -14.15rem
+    @media screen and (min-width: 1088px)
+      top: 4rem
+      left: -20rem
+    .indicador
+      transform: rotate(67deg)
+      bottom: -22px
+      right: 21px
+      left: auto
+      @media screen and (min-width: 1088px)
+        top: -7px
+        transform: rotate(0deg)
+        left: auto
+        bottom: auto
+        right: -7px
+  P
+    font-family: 'traveling__typewriterregular'
+    font-size: .75rem
+    color: #0071bd
+    text-align: justify
+    line-height: 1.3em
+    letter-spacing: .05em
+    word-spacing: .15em
+    margin-bottom: 1.75rem
+    @media screen and (min-width: 1088px)
+      font-size: .85rem
+      margin-bottom: 1rem
+      line-height: 1.3em
+    @media screen and (min-width: 1200px)
+      // font-size: 1rem
+      font-size: .85rem
+      line-height: 1.3em
+  .indicador
+    position: absolute
+    top: auto
+    bottom: -12px
+    right: auto
+    width: 40px
+    height: 40px
+
+    bottom: -12px
+    left: -7px
+    transform: rotate(-113deg)
+    @media screen and (min-width: 1088px)
+      top: -7px
+      transform: rotate(0deg)
+      left: auto
+      bottom: auto
+      right: -7px
+  .closePopup,
+  .closePopup2,
+  .closePopup3,
+    width: 30px
+    height: 30px
+    background: white
+    color: #0071bd
+    font-size: 1.15rem
+    font-family: 'd-din_condenseddinCnBd'
+    line-height: 1.65em
+    position: absolute
+    top: -12px
+    left: auto
+    right: -12px
+    border-radius: 50%
+    border: 1px solid #0071bd
+    text-align: center
+    cursor: pointer
+    @media screen and (min-width: 1088px)
+      left: -12px
+      right: auto
+
+.popupLucha
+  background: rgba(0,0,0,.5)
+  width: 100vw
+  height: 100vh
+  z-index: 777
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+.boxFecha
+  padding-top: 1.75rem
+  .boxTime
+    height: 182px
+    position: relative
+    @media screen and (min-width: 1200px)
+      margin-top: 1.5rem
+    .lineTime
+      position: absolute
+      bottom: 3.5rem
+      width: 100%
+      height: 1px
+      background: #0071bd
+      .botella
+        position: absolute
+        bottom: -1.65rem
+        left: -.5rem
+        width: 20px
+        z-index: 12
+      .pin
+        position: absolute
+        height: 68px
+        width: 1px
+        background: #0071bd
+        left: 14.33%
+        bottom: 0
+        .contentPopup
+          top: -13rem
+          left: 2rem
+          .indicador
+            display: none
+            @media screen and (min-width:1088px)
+              display: block
+          &.pos1
+            top: -8rem
+            left: -2rem
+            @media screen and (min-width:1088px)
+              left: 2rem
+
+          &.pos2
+            top: -16.5rem
+            left: -5rem
+            @media screen and (min-width:1088px)
+              top: -17.5rem
+              left: 2rem
+          &.pos3
+            top: -13.5rem
+            left: -8rem
+            @media screen and (min-width:1088px)
+              top: -15.5rem
+              left: 2rem
+          &.pos4
+            top: -13.5rem
+            left: -11rem
+            @media screen and (min-width:1088px)
+              top: -14.5rem
+              left: 2rem
+          &.pos5
+            top: -15rem
+            left: -15.5rem
+            @media screen and (min-width:1088px)
+              top: -18rem
+              left: -21.5rem
+            .indicador
+              bottom: -1.15rem
+              left: auto
+              right: .6rem
+              transform: rotate(-131deg)
+          &.pos6
+            top: -16rem
+            left: -18.5rem
+            @media screen and (min-width:1088px)
+              top: -18rem
+              left: -21.5rem
+            .indicador
+              bottom: -1.15rem
+              left: auto
+              right: .6rem
+              transform: rotate(-131deg)
+          .closePopup
+            right: -12px
+            left: auto
+          .indicador
+            transform: rotate(-90deg)
+            bottom: 1px
+            left: -12px
+            right: auto
+            top: auto
+        a
+          width: 30px
+          height: 30px
+          display: block
+          box-sizing: border-box
+          background: #0071bd
+          color: white
+          font-family: 'd-din_condenseddinCnBd'
+          font-size: .85rem
+          line-height: .85em
+          padding-top: .25rem
+          position: absolute
+          top: 0px
+          left: -14px
+          @media screen and (min-width:1088px)
+            width: 40px
+            height: 40px
+            top: -16px
+            left: -18px
+            font-size: 1rem
+            padding-top: .45rem
+          @media screen and (min-width:1200px)
+            width: 60px
+            height: 60px
+            top: -41px
+            left: -29px
+            font-size: 1.5rem
+            padding-top: .5rem
+        &.pin2
+          left: 28.66%
+        &.pin3
+          left: 42.99%
+        &.pin4
+          left: 57.32%
+        &.pin5
+          left: 71.65%
+        &.pin6
+          left: 85.98%
+
+      &:before,
+      &:after
+        content: ''
+        height: 16px
+        width: 1px
+        background: #0071bd
+        position: absolute
+        top: -8px
+        left: 0
+      &:after
+        left: auto
+        right: 0
+
+  h3,
+  h4
+    font-family: 'd-din_condenseddinCnBd'
+    font-size: 2.45rem
+    line-height: .85em
+    color: #0071bd
+    @media screen and (min-width: 1088px)
+      font-size: 2rem
+    @media screen and (min-width: 1200px)
+      font-size: 2.25rem
+  h4
+    font-size: 1.28rem
+    font-family: 'd-din_condensedregular'
+    line-height: 1em
+    @media screen and (min-width: 1088px)
+      font-size: 1.25rem
+    @media screen and (min-width: 1200px)
+      font-size: 1.35rem
+.PhotoMeme
+  overflow: hidden
+  @media screen and (min-width: 1088px)
+    display: block
+    overflow: auto
+  .boxtitle
+    h2,
+    h3
+      br
+        display: block
+        @media screen and (min-width: 1088px)
+          display: none
+.boxMsjeError
+  display: none
+  background: rgba(0,0,0,.7)
+  padding: 0 1rem
+label
+  &.error
+    display: none !important
+.bgSection
+  // @include cover-background("../images/bgsection.jpg", "top", "left", "")
+  background-image: url("../images/bgsection.jpg")
+  background-position: 0 0
+  background-repeat: repeat
+  // background-size: auto
+  position: relative
+.scrollButtom
+  position: absolute
+  bottom: 2.5rem
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 21
+  &.notText
+    bottom: 1.5rem
+    .boxBottom
+      &:before
+        content: ''
+  .boxBottom
+    width: 40px
+    height: 40px
+    background: rgba(0,113,185,.5)
+    border-radius: 50%
+    position: relative
+    display: block
+    cursor: pointer
+    &:before
+      content: 'DESCUBRE MÁS'
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -1.75rem
+      display: inline-block
+      width: 150px
+      text-align: center
+      color: white
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: .95rem
+    .bgFlexha
+      background: url('../images/flecha.svg') center no-repeat
+      height: 20px
+      width: 20px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%) rotate(90deg)
+      cursor: pointer
+
+.modal
+  z-index: 9000
+  .fullScreen
+    width: 100vw
+    height: 100vh
+    z-index: 12
+  iframe
+    height: 100vh
+  .buttonCloseModal
+    position: fixed
+    top: 4rem
+    right: 2rem
+    z-index: 123
+    .fa-times-circle
+      font-size: 2.5rem
+      color: white
+.boxConstruccion
+  position: relative
+  width: 100vw
+  height: 100vh
+  margin: 0
+  padding: 0
+  .titleBox
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    color: white
+    text-align: center
+    img
+      width: 120px
+    h1, h2
+      font-size: 3rem
+      font-family: 'd-din_condenseddinCnBd'
+      text-transform: uppercase
+      color: #f00
+      line-height: .85em
+    h2
+      color: white
+      font-size: 1.5rem
+      line-height: 1.5em
+  .boxBackground
+    position: absolute
+    top: 0
+    left: 0
+    img
+      width: 100vw
+      height: 100vh
+      object-fit: cover
+    &:before
+      content: ''
+      background: rgba(0,0,0,.75)
+      width: 100vw
+      height: 100vh
+      position: absolute
+      top: 0rem
+      left: 0
+.pin-wrapper
+  width: 100%
+  height: 100%
+.wrapperLoading2
+  background: #0b0b0b
+  position: relative
+  width: 100%
+  height: 100vh
+
+  .boxBars
+    position: relative
+    width: 100%
+    height: 100vh
+    background: #161616
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, flex-start)
+    @include prefix(align-items, flex-start)
+    .bars
+      width: 10%
+      height: 100%
+      background: rgb(35, 97, 196)
+      transform: scaleY(0)
+      animation: animate 4s linear forwards
+      // animation-iteration-count: 1
+      &:nth-child(odd)
+        transform-origin: top
+      &:nth-child(even)
+        transform-origin: bottom
+      &:nth-child(1)
+        animation-delay: 0s
+      &:nth-child(2)
+        animation-delay: 0.4s
+      &:nth-child(3)
+        animation-delay: 0.8s
+      &:nth-child(4)
+        animation-delay: 1.2s
+      &:nth-child(5)
+        animation-delay: 1.6s
+      &:nth-child(6)
+        animation-delay: 2s
+      &:nth-child(7)
+        animation-delay: 2.4s
+      &:nth-child(8)
+        animation-delay: 2.8s
+      &:nth-child(9)
+        animation-delay: 3.2s
+      &:nth-child(10)
+        animation-delay: 3.4s
+  .centerCounter
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    margin-top: -10px
+    z-index: 2
+    h2
+      text-align: center
+      color: white
+      font-size: 6rem
+      font-family: 'd-din_condenseddinCnBd'
+      text-transform: uppercase
+    img
+      width: 300px
+      margin-top: -40px
+.wrapperLoading
+  background: #0b0b0b
+  position: relative
+  .loading-page
+    background: #161616
+    width: 100%
+    height: 100vh
+    .counter
+      h2
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        color: grey
+        font-size: 6rem
+        font-family: 'd-din_condenseddinCnBd'
+        margin-top: -10px
+
+
+
+.marcoSubTitle
+  width: 80%
+  height: 44px
+  box-sizing: border-box
+  border-top: 1px solid #0071bd
+  border-bottom: 1px solid #0071bd
+  margin: .5rem auto 0
+  position: relative
+  @media screen and (min-width:1088px)
+    width: 480px
+    height: 44px
+  @media screen and (min-width:1200px)
+    width: 600px
+    height: 54px
+  &.marcoMeme
+    width: 200px
+    @media screen and (min-width:1200px)
+      width: 200px
+  .triangulo
+    height: 31px
+    width: 1px
+    background: #0071bd
+    position: absolute
+    @media screen and (min-width:1200px)
+      height: 38px
+    &.izqTop
+      top: -5px
+      left: -11px
+      transform: rotate(45deg)
+      @media screen and (min-width:1200px)
+        top: -6px
+        left: -13px
+    &.izqBottom
+        bottom: -5px
+        left: -11px
+        transform: rotate(-45deg)
+        @media screen and (min-width:1200px)
+          bottom: -6px
+          left: -13px
+    &.derTop
+      top: -5px
+      right: -11px
+      transform: rotate(-45deg)
+      @media screen and (min-width:1200px)
+        top: -6px
+        right: -13px
+    &.derBottom
+        bottom: -5px
+        right: -11px
+        transform: rotate(45deg)
+        @media screen and (min-width:1200px)
+          bottom: -6px
+          right: -13px
+  h3
+    &.textSubtitle
+      font-family: 'd-din_condensedregular'
+      font-size: 1.1rem
+      line-height: 2.6em
+      color: #0071bd
+      text-transform: uppercase
+      @media screen and (min-width:1088px)
+        line-height: 1.75em
+        font-size: 1.5625rem
+      @media screen and (min-width:1200px)
+        font-size: 2rem
+        line-height: 3.25rem

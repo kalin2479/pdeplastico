@@ -1,0 +1,19 @@
+{
+  "name": "htmltoimg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "canvas2image": "^1.0.5",
+    "cropper": "^4.0.0",
+    "croppie": "^2.6.4",
+    "html2canvas": "^1.0.0-rc.1",
+    "jquery": "^3.4.1"
+  }
+}

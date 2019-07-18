@@ -1,0 +1,10 @@
+# php_value allow_url_fopen On
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://pdeplastico.pe/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.pdeplastico.pe [NC]
+RewriteRule ^(.*)$ https://pdeplastico.pe/$1 [L,R=301]

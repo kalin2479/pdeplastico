@@ -1,0 +1,234 @@
+.logoGris
+  opacity: 0
+  display: none
+  @media screen and (min-width: 1088px)
+    opacity: 0
+    display: block
+nav
+  position: fixed
+  top: 50%
+  left: 1rem
+  z-index: 8000
+  transform: translateY(-50%)
+  display: none
+  @media screen and (min-width: 1088px)
+    @include prefix(display,flex)
+    @include prefix(flex-direction, column)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, flex-start)
+    @include prefix(align-items, flex-start)
+  a
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    border: 1px solid #0071bd
+    margin-bottom: 10px
+    transition: .5s ease all
+    position: relative
+    span
+      color: #0071bd
+      font-size: .85rem
+      font-family: 'd-din_condenseddinCnBd'
+      position: absolute
+      top: -.18rem
+      left: 1.18rem
+      display: none
+      width: 80%
+    &:last-child
+      margin-bottom: 0
+    &:hover,
+    &.active
+      background: #0071bd
+    &:hover
+      span
+        display: none
+        background: rgba(0,0,0,.5)
+.navTop
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, nowrap)
+  @include prefix(justify-content, space-between)
+  @include prefix(align-items, center)
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 8888
+  width: 100%
+  box-sizing: border-box
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem
+  // background: rgba(0,0,0, .25)
+  .logoNav
+    img
+      position: relative
+      width: 120px
+      @media screen and (min-width: 1088px)
+        position: fixed
+        top: 2.65rem
+
+  .boxSocial
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, flex-start)
+    @include prefix(align-items, center)
+    a
+      width: 25px
+      height: 25px
+      background: white
+      text-align: center
+      border-radius: 50%
+      border: 1px solid white
+      margin-right: .65rem
+      position: relative
+      svg
+        position: absolute
+        top: 50%
+        left: 50%
+        color: #000000
+        transform: translate(-50%,-50%)
+      &:last-child
+        margin-right: 0
+header
+  position: relative
+  width: 100vw
+  height: 100vh
+  .pin-wrapper
+    height: 100vh !important
+  .boxBanner
+    overflow: hidden
+    width: 100vw
+    height: 100vh
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+
+  .boxTitle
+    position: absolute
+    top: 50%
+    left: 50%
+    padding-bottom: 0px
+    // border-bottom: 1px solid white
+    transform: translate(-50%,-90%)
+    width: 100%
+    z-index: 55
+    h2,
+    h1
+      color: white
+      font-family: 'd-din_condenseddinCnBd'
+      font-size: 2.45rem
+      line-height: .9em
+      text-align: center
+      @media screen and (min-width: 1088px)
+        // font-size: 3.5rem
+        font-size: 2.8125rem
+      @media screen and (min-width: 1200px)
+        font-size: 3.5rem
+
+    h1
+      font-family: 'd-din_condenseddinCnBd'
+      color: #0071bd
+    img
+      width: 120px
+      margin: auto
+      display: block
+      @media screen and (min-width: 1200px)
+        width: 150px
+  .boxCarrusel
+    width: 100vw
+    height: 100vh
+  .carruselWrapper
+    width: 100vw
+    height: 100vh
+    background: black
+    .owl-nav
+      button
+        position: absolute
+        bottom: 9rem
+        // transform: translateY(0%)
+        border-radius: 50%
+        border: 1px solid white !important
+        width: 30px
+        height: 30px
+        overflow: hidden
+        outline: none
+        // @media screen and (min-width: 1200px)
+        //   bottom: 9.15rem
+        //   transform: translateY(-0%)
+        @media screen and (min-width: 1088px)
+          bottom: 9.15rem
+        &:active,
+        &:focus
+          outline: none
+          border: 0
+        &:before
+          content: ''
+          background: url('../images/flecha.svg') center no-repeat
+          width: 20px
+          height: 20px
+          display: block
+          margin: auto
+        &.owl-next
+          right: 1.25rem
+          @media screen and (min-width: 1088px)
+            right: 15%
+
+        &.owl-prev
+          left: 1.25rem
+          @media screen and (min-width: 1088px)
+            left: 15%
+          &:before
+            transform: rotate(-180deg)
+        span
+          display: none
+    .owl-dots
+      display: none
+    .boxMensaje
+      @include prefix(display,flex)
+      @include prefix(flex-direction, column)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, flex-end)
+      @include prefix(align-items, center)
+      padding: 10px 5px
+      border: 1px solid rgba(255,255,255,1)
+      width: 100vw
+      height: 100vh
+      position: relative
+      span
+        font-family: 'd-din_condensedregular'
+        // font-size: 1.75rem
+        font-size: .85rem
+        @media screen and (min-width: 1088px)
+          font-size: 1.5rem
+
+      &.center
+        p
+          top: -8rem
+          @media screen and (min-width: 1088px)
+            top: -8.5rem
+
+      p
+        color: white
+        line-height: 1em
+        font-family: 'd-din_condenseddinCnBd'
+        // font-size: 1.75rem
+        font-size: .85rem
+        position: relative
+        z-index: 4
+        top: -8rem
+        text-align: center
+        width: 70%
+        @media screen and (min-width: 1088px)
+          font-size: 1.5rem
+          width: auto
+        br
+          display: none
+          @media screen and (min-width: 1088px)
+            display: block
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        object-fit: cover

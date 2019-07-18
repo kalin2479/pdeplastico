@@ -1,0 +1,118 @@
+header
+  position: relative
+  width: 100vw
+  height: 100vh
+  .boxBanner
+    overflow: hidden
+    width: 100%
+    height: 100%
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+  .scrollButtom
+    position: absolute
+    bottom: 0px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 21
+    .boxBottom
+      width: 40px
+      height: 40px
+      background: #008CE8
+      border-radius: 50%
+      position: relative
+      display: block
+      .bgFlexha
+        background: url('../images/flecha.svg') center no-repeat
+        height: 30px
+        width: 30px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%) rotate(90deg)
+  .boxTitle
+    position: absolute
+    top: 50%
+    left: 50%
+    padding-bottom: 0px
+    // border-bottom: 1px solid white
+    transform: translate(-50%,-90%)
+    width: 100%
+    h2,
+    h1
+      color: white
+      font-family: 'd-din_condensedregular'
+      font-size: 3.5rem
+      line-height: .9em
+      text-align: center
+      @media screen and (min-width: 1200px)
+        font-size: 5.5rem
+
+    h1
+      font-family: 'd-din_condenseddinCnBd'
+      color: #FF0000
+    img
+      width: 120px
+      margin: auto
+      display: block
+      @media screen and (min-width: 1200px)
+        width: 150px
+  .boxCarrusel
+    position: absolute
+    bottom: 5.5rem
+    left: 50%
+    transform: translateX(-50%)
+  .carruselWrapper
+    width: 90%
+    position: relative
+    @media screen and (min-width:1088px)
+      width: 720px
+    .owl-nav
+      button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        border-radius: 50%
+        border: 1px solid white !important
+        width: 30px
+        height: 30px
+        overflow: hidden
+        outline: none
+        &:active,
+        &:focus
+          outline: none
+          border: 0
+        &:before
+          content: ''
+          background: url('../images/flecha.svg') center no-repeat
+          width: 20px
+          height: 20px
+          display: block
+          margin: auto
+        &.owl-next
+          right: -2.95rem
+        &.owl-prev
+          left: -2.95rem
+          &:before
+            transform: rotate(-180deg)
+        span
+
+          display: none
+    .owl-dots
+      display: none
+    .boxMensaje
+      @include prefix(display,flex)
+      @include prefix(flex-direction, row)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, center)
+      @include prefix(align-items, center)
+      padding: 10px 5px
+      border: 1px solid rgba(255,255,255,1)
+      p
+        color: white
+        font-family: 'd-din_condensedregular'
+        font-size: 1.75rem
+      img
+        width: 90px
+        margin-right: 1rem

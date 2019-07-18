@@ -1,0 +1,123 @@
+
+
+.containerStep
+  min-height: 500px
+  .buttonPreview
+    background: white
+    border-radius: 10px
+    line-height: 1.75em
+    padding: 0 1rem
+    display: inline-block
+.stepOne
+  .controllerButton
+    margin: auto
+    text-align: center
+  a
+    background: white
+    border-radius: 10px
+    line-height: 1.75em
+    padding: 0 1rem
+    display: inline-block
+.stepTwo
+  display: none
+.containerPaso
+  padding: 0 2rem
+  .row
+    margin-top: 1rem
+    .buttonPreview
+      background: #1b3f79
+      display: inline-block
+      color: white
+      font-family: "gotham_boldregular"
+      padding: 0.75rem
+      border-radius: 20px
+    &.rowWord
+      @include prefix(display,flex)
+      @include prefix(flex-direction, row)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, center)
+      @include prefix(align-items, center)
+      a
+        &:first-child
+          margin: .5rem
+    &.containerText
+      position: relative
+      z-index: 100
+    input[type="text"]
+      width: 90%
+      border: 1px solid white
+      padding: 1rem
+
+.containerProcess
+  text-align: center
+  margin: auto
+  padding-bottom: 1rem
+  .containerShare
+    .containerImg
+      // width: 235px
+      // height: 350px
+      width: 540px
+      height: 350px
+      background: rgba(0, 0, 0,0.85)
+      margin: 0 auto
+      position: relative
+      .wrapperText
+        position: absolute
+        width: 100%
+        bottom: .85rem
+        left: 50%
+        transform: translateX(-50%)
+        p
+          color: white
+          font-size: 1.25rem
+          font-family: "gotham_boldregular"
+          position: relative
+          text-align: center
+          &.no
+            &:before
+              content: ""
+              position: absolute
+              top: 50%
+              transform: translateY(-50%)
+              width: 65%
+              height: 2px
+              background: red
+              right: 1.55rem
+      .title
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        color: white
+        font-size: 1.5rem
+        text-transform: uppercase
+        // display: inline-block
+        width: 100%
+        padding-top: 1.25rem
+      // img
+      //   object-fit: cover
+      //   height: 100%
+      //   width: 100%
+  .containerTitle
+    padding: 1rem 0
+    h2,
+    h3
+      color: #1c3f79
+      font-size: .9rem
+      font-family: "gotham_mediumregular"
+      line-height: 1.5em
+    h3
+      color: white
+      font-size: 1.3rem
+      font-family: "gotham_boldregular"
+      line-height: 1em
+    br
+      display: block
+      @media screen and (min-width: 800px)
+        display: none
+  // padding: 2rem 0 1rem
+  // @include prefix(display,flex)
+  // @include prefix(flex-direction, row)
+  // @include prefix(flex-wrap, wrap)
+  // @include prefix(justify-content, center)
+  // @include prefix(align-items, center)
