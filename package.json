@@ -16,7 +16,7 @@
     "croppie": "^2.6.4",
     "gsap": "^2.1.3",
     "html2canvas": "^1.0.0-rc.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "owl.carousel": "^2.3.4",
     "owl.carousel2": "^2.2.1",
     "scrollmagic": "^2.0.7"
