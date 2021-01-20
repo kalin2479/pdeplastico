@@ -14,7 +14,7 @@
     "canvas2image": "^1.0.5",
     "cropper": "^4.0.0",
     "croppie": "^2.6.4",
-    "gsap": "^2.1.3",
+    "gsap": "^3.6.0",
     "html2canvas": "^1.0.0-rc.1",
     "jquery": "^3.4.1",
     "owl.carousel": "^2.3.4",
